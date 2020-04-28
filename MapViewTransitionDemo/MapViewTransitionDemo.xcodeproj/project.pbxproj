@@ -17,6 +17,8 @@
 		DE29FCBD243482F60065D2A7 /* SelectAddressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE29FCBC243482F60065D2A7 /* SelectAddressViewController.swift */; };
 		DE29FCC024348C130065D2A7 /* LocationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE29FCBF24348C130065D2A7 /* LocationModel.swift */; };
 		DE29FCC3243492520065D2A7 /* MapManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE29FCC2243492520065D2A7 /* MapManager.swift */; };
+		DE605CA024441399001A340C /* ViewController+NavigationDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE605C9F24441399001A340C /* ViewController+NavigationDelegate.swift */; };
+		DE605CA3244416B2001A340C /* SmoothMapViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE605CA2244416B2001A340C /* SmoothMapViewProtocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,8 @@
 		DE29FCBC243482F60065D2A7 /* SelectAddressViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectAddressViewController.swift; sourceTree = "<group>"; };
 		DE29FCBF24348C130065D2A7 /* LocationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationModel.swift; sourceTree = "<group>"; };
 		DE29FCC2243492520065D2A7 /* MapManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapManager.swift; sourceTree = "<group>"; };
+		DE605C9F24441399001A340C /* ViewController+NavigationDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+NavigationDelegate.swift"; sourceTree = "<group>"; };
+		DE605CA2244416B2001A340C /* SmoothMapViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmoothMapViewProtocol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,12 +68,14 @@
 		DE29FCA424346F230065D2A7 /* MapViewTransitionDemo */ = {
 			isa = PBXGroup;
 			children = (
+				DE605CA1244415C1001A340C /* ViewControllerTransition */,
 				DE29FCC1243492400065D2A7 /* MapManager */,
 				DE29FCBE24348BFB0065D2A7 /* LocationModel */,
 				DE29FCB924346FEE0065D2A7 /* MapWrapView */,
 				DE29FCA524346F230065D2A7 /* AppDelegate.swift */,
 				DE29FCA724346F230065D2A7 /* SceneDelegate.swift */,
 				DE29FCA924346F230065D2A7 /* ViewController.swift */,
+				DE605C9F24441399001A340C /* ViewController+NavigationDelegate.swift */,
 				DE29FCBC243482F60065D2A7 /* SelectAddressViewController.swift */,
 				DE29FCAB24346F230065D2A7 /* Main.storyboard */,
 				DE29FCAE24346F270065D2A7 /* Assets.xcassets */,
@@ -101,6 +107,14 @@
 				DE29FCC2243492520065D2A7 /* MapManager.swift */,
 			);
 			path = MapManager;
+			sourceTree = "<group>";
+		};
+		DE605CA1244415C1001A340C /* ViewControllerTransition */ = {
+			isa = PBXGroup;
+			children = (
+				DE605CA2244416B2001A340C /* SmoothMapViewProtocol.swift */,
+			);
+			path = ViewControllerTransition;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -179,8 +193,10 @@
 				DE29FCA824346F230065D2A7 /* SceneDelegate.swift in Sources */,
 				DE29FCBD243482F60065D2A7 /* SelectAddressViewController.swift in Sources */,
 				DE29FCC3243492520065D2A7 /* MapManager.swift in Sources */,
+				DE605CA3244416B2001A340C /* SmoothMapViewProtocol.swift in Sources */,
 				DE29FCC024348C130065D2A7 /* LocationModel.swift in Sources */,
 				DE29FCBB243470140065D2A7 /* MapWrapView.swift in Sources */,
+				DE605CA024441399001A340C /* ViewController+NavigationDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

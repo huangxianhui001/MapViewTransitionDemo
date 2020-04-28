@@ -15,7 +15,16 @@ enum SegueType : String {
 }
 
 /// 首页
-class ViewController: UIViewController {
+class ViewController: UIViewController,SmoothMapViewAnimateProtocol {
+        
+    var needPushPopAnimate: Bool
+    
+    var mapWrapView: MapWrapView?
+    
+    var mapContainerView: UIView?{
+        return self.mapContainerView
+    }
+    
 
     @IBOutlet weak var startLocation: UIButton!
     @IBOutlet weak var endLocation: UIButton!
@@ -23,7 +32,7 @@ class ViewController: UIViewController {
     var endLocationModel: Location?
     let mapManager = MapManager()
     
-    @IBOutlet weak var mapWrapView: MapWrapView!
+//    @IBOutlet weak var mapWrapView: MapWrapView!
     
     var mapView: MKMapView {
         get {
@@ -36,12 +45,15 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
         self.mapView.delegate = self.mapManager
         self.mapManager.mapView = self.mapView
+        self.navigationController?.delegate = self;
         
     }
 
 
     @IBAction func onAddAction(_ sender: Any) {
-        
+        if let vc = self.storyboard?.instantiateViewController(identifier: "viewController") {
+            self.navigationController?.pushViewController(vc, animated: true)
+        }
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

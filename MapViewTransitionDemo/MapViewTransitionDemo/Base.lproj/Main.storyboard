@@ -10,26 +10,14 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MapViewTransitionDemo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="viewController" id="BYZ-38-t0r" customClass="ViewController" customModule="MapViewTransitionDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ieA-cm-LZv" userLabel="map容器">
                                 <rect key="frame" x="0.0" y="88" width="414" height="808"/>
-                                <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5iz-n4-Iwa" customClass="MapWrapView" customModule="MapViewTransitionDemo" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                    </view>
-                                </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                <constraints>
-                                    <constraint firstItem="5iz-n4-Iwa" firstAttribute="leading" secondItem="ieA-cm-LZv" secondAttribute="leading" id="1Z7-Pl-l1F"/>
-                                    <constraint firstAttribute="bottom" secondItem="5iz-n4-Iwa" secondAttribute="bottom" id="EKx-ca-OlP"/>
-                                    <constraint firstItem="5iz-n4-Iwa" firstAttribute="top" secondItem="ieA-cm-LZv" secondAttribute="top" id="Uli-5s-riF"/>
-                                    <constraint firstAttribute="trailing" secondItem="5iz-n4-Iwa" secondAttribute="trailing" id="wf6-2C-8Cq"/>
-                                </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I7c-UR-dYd" userLabel="起点">
                                 <rect key="frame" x="20" y="752" width="374" height="50"/>
@@ -79,7 +67,6 @@
                     </navigationItem>
                     <connections>
                         <outlet property="endLocation" destination="TtA-R6-gat" id="kHT-H1-MPn"/>
-                        <outlet property="mapWrapView" destination="5iz-n4-Iwa" id="On6-e1-XTU"/>
                         <outlet property="startLocation" destination="I7c-UR-dYd" id="Qg4-UI-dJd"/>
                     </connections>
                 </viewController>
